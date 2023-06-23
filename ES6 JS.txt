@@ -1,0 +1,87 @@
+// function add(x,y){
+//     return this +x+y;
+// }
+// var value=Reflect.apply(add,30,[10,20]);
+// console.log(value);
+
+// let studentData={
+//     name:"John",
+//     country:"India"
+// }
+// var dynamicProperty="age";
+// studentData[dynamicProperty]=25;
+// var dynamicProperty="city";
+// studentData.dynamicProperty="Pune";
+// console.log(studentData.age);
+// console.log(studentData.city);
+var states=new Map();
+states.set('Kavana',{
+    empId:'1000',
+    city:"BNG",
+    age:25
+});
+console.log(states.keys().next().value)
+
+
+let arr=['a','b','c'];
+let itr=arr[Symbol.iterator]();
+for(let i=1;i<=arr.length;i++){
+    setTimeout(()=>{
+        console.log(itr.next())
+;    },4000);
+}
+
+function addThree(num1,num2=2,num3=4){
+    return num1+num2+num3;
+};
+console.log(addThree(1, ,3));
+
+var employee={
+    empId:'I2002',
+    empName:{
+        firstName:"Veena",
+        mil:"babu",
+        lN:"bhat"
+    },
+    empStatus:"active"
+}
+var {firstName:mil,lN}=employee.empName;
+console.log(mil);
+
+
+
+let obj1={clothes:"tshirts"};
+let obj2={clothes:"tshirts"};
+
+let list=["apparel","clothing","accesories","elecrtonics","accesories","clothing"];
+let listSet=new Set(list);
+listSet.add(obj1);
+listSet.add(obj2);
+listSet.delete({clothes:"tshirt"});
+console.log(listSet);
+
+
+
+
+
+
+let myArray=new Set([1,2,3]);
+myArray.delete(1);
+console.log(myArray);
+
+
+
+let name="nisha";
+function demo(){
+    name+="rani"
+}
+console.log(name)
+
+
+// var places=['beng','man','mysore','hubli','beng']
+// var karnataka=new Set(places).values();
+// for(let i=1;i<places.length;i++){
+//     setTimeout(()=>{
+//         console.log(karnataka.next());
+//     },1000);
+// };

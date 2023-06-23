@@ -1,0 +1,191 @@
+// var temp="8080";
+// if(true){
+//     const temp=8080;
+//     console.log(typeof temp)
+// }
+// o/p:number
+
+// let movie={
+//     name: "GOG",
+//     type:"Hollywood"
+// }
+// let movieProperty='ratings';
+// movie['current'+movieProperty]=5
+// console.log(movie.currentProperty); //undefined
+
+// let myList=['Edison','Tesla','Einstein'];
+// let[,a]=myList;
+// document.write(a);//Tesla
+
+// let employeeList=[
+//     {id:"1001",name:"tom"},
+//     {id:"1002",name:"jack"},
+//     {id:"1003",name:"tim"},
+//     {id:"[1004",name:"sam"},
+//     ];
+//     console.log("Emp id:${employeeList[0].id} Emp Name: ${employeeList[0].id}")
+//     o/p:Emp id:${employeeList[0].id} Emp Name: ${employeeList[0].id}
+
+// const cars=[{'name':"Toyota",'cost':12},
+//         {'name':"Benz",'cost':1}
+// ]
+// const x=cars.reduce((a,b)=>a+b.cost,5)
+// console.log(x) //18
+
+// let name="sam";
+// function demo(){
+//     name+="Mark"
+// }
+// console.log(name)//sam
+
+
+
+// let myArray=new Array([1,2,3]);
+// myArray.delete(1);
+// console.log(myArray);
+// TypeError: myArray.delete is not a function
+
+// new Promise(function(resolve,reject){
+//     let b;
+//     setTimeout(compute=(a=5)=>resolve(a+b),1000);
+//     b=25;
+// }).then(function(data){console.log(data)}) //30
+
+// const result=[];
+// function check(par1,...par2){
+//     return result.push(par1,par2);
+// }
+// console.log(check("hello","world")); //2
+
+// let output=[];
+// var component=(...par1)=>{
+//     output=[...par1];
+//     return output.filter((a)=>a.includes('script'))
+// }
+// console.log(component('es6','js','cs','rs')) //[]
+    
+// let states=[];
+// states.push(['rihana',{
+//     empId:'10001',
+//     city:'bng',
+//     age:25
+// }]);
+// console.log(...states); //[ 'rihana', { empId: '10001', city: 'bng', age: 25 } ]
+    
+    
+    // let employee={
+    //     empId:'1001',
+    //     empname:{
+    //         firstName:'John',
+    //         ml:'Thomsan',
+    //         ln:'Mark'
+    //     },
+    //     empStatus:'active'
+    // };
+    // let{firstName,ml,ln}=employee.empName;
+    // console.log(ml) //TypeError: Cannot destructure property `firstName` of 'undefined' or 'null'.
+    
+    // let empId:'11111'
+    // let employee={
+    //     empId,
+    //     getEmpDetails(){
+    //         return this.empid;
+    //     }
+    //     getDetails(){
+    //         setInterval(()=>{
+    //             return this.empId
+    //         },1000);
+    //     }
+    //     console.log(employee.getEmpDetails());
+    //     console.log(employee.getDetails());
+    // }
+    
+    
+    let output=[]
+    var component=(...par1)=>{
+        output=[...par1];
+        return output.filter((a)=>a.includes('Script'));
+    }
+    console.log(component('ES6','JS','CS','REACT'))
+    
+    
+    
+    
+    
+    
+    let x=[1,2,3];
+let y=[4,5,6];
+const combineArray1=[...x,...y];
+console.log("one "+combineArray1);
+
+let z=[3,4,5,6];
+const combineArray2=[1,2,...z];
+console.log("two "+combineArray2);
+
+let a=[3,4,5,6]
+const combineArray3=[1,2,...z];
+console.log("three "+a)
+
+// let empId='I1005';
+// let employee={
+//     empId,
+//     getEmpDetails(){
+//         return this.empId;
+//     },
+//     getDetails(){
+//         setInterval(()=>{
+//             return this.empId
+//         },1000)
+//     }
+// }
+// console.log(employee.getEmpDetails());
+// console.log(employee.getDetails());
+
+
+
+
+
+
+
+let lis=[{alterEgo:'Bruce',city:'gotham'},{alterEgo:'oliver',city:'start'},{alterEgo:'Barry',city:'central'}]
+let [,,darkKnight]=lis;
+function cityHunter({alterEgo:x,heroName:y, power:k,city:z}){
+    console.log(x+'-'+y+'-'+k+'-'+z)
+}
+cityHunter(darkKnight);
+// class Person{
+//     constructor(friends){
+//         this.friends=friends;
+//     }
+// }
+//     class Employee extends Person{
+//         constructor(friends){
+//             super(friends)
+//         }
+//         displayFriends(){
+//             for(let friend of friends){
+//                 console.log(friend)
+//             }
+//         }
+//     }
+//     let friendList=["john",'tom','jack','sam','richard','mark','james',];
+//     let x=new Employee(friendList);
+//     x.displayFriends();
+
+
+
+// let movie={name:"GOG",type:"Hollywood"}
+// let movieProperty='ratings'
+// movie['current'+movieProperty]=5;
+// console.log(movie.ratings)
+
+// let studentData={
+//     name:"john",
+//     country:'India'
+// };
+// var dynamicProperty='age'
+// studentData[dynamicProperty]=25;
+// var dynamicProperty='city';
+// studentData.dynamicProperty='pune';
+// console.log(studentData.age);
+// console.log(studentData.city);
